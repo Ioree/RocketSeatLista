@@ -1,0 +1,132 @@
+:root {
+    ---background-color: #F4F5FB;
+    ---background-secondary-color: #FFFFFF;
+
+    ---color-brand: #CA3884;
+    ---color-brand-hover: #A52C6B;
+    ---color-danger: #C93847;
+
+    ---content-primary: #080B12;
+    ---content-secundary: #374151;
+    ---content-tertiary: #9CA3AF;
+    ---always-white: #FFFFFF;
+
+    ---border-primary: #D1D5DB;
+    ---border-primary: #B9C2D0;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-size: 40px 40px;
+    background-color: var(---background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    display: block;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.container {
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: var(---color-brand);
+    font-size: 14px;
+}
+
+a:hover {
+    color: var(---color-brand-hover);
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(---border-primary);
+    border-radius: 10px;
+    margin-right: 20px;
+    height: 20px;
+}
+
+.input-group input::after {
+    accent-color: var(---always-white);
+}
+
+.input-group button {
+    padding: 10px 30px;
+    background: var(---color-brand);
+    color: var(---always-white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    background: var(---color-brand-hover);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(---always-white);
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+#itemList li div label {
+    margin-left: 10px;
+}
+
+#itemList li div input:checked {
+    accent-color: var(---color-brand);
+}
+
+.marked {
+    color: var(---content-tertiary);
+    text-decoration: line-through;
+}
+
+.alert {
+    background: var(---color-danger);
+    color: var(---always-white);
+    padding: 1px 10px;
+    border-radius: 4px;
+    margin-top: 16px;
+    display: none;
+    align-items: center;
+}
+
+.alert img{
+    margin-right: 15px;
+}
+
